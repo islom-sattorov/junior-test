@@ -1,5 +1,4 @@
 import { FC, useEffect } from 'react';
-import './App.scss';
 import { getPosts } from './features/posts/postSlice';
 import { useAppDispatch, useAppSelector } from './hooks/useTypedSelector';
 
@@ -7,7 +6,6 @@ const App: FC = () => {
   const dispatch = useAppDispatch()
   const {data, error, loading} = useAppSelector((state) => state.posts)
   
-
   useEffect(() => {
     dispatch(getPosts())
   }, [dispatch])
@@ -25,7 +23,6 @@ const App: FC = () => {
    return (
     <div>
       <h2>Test</h2>
-      <button>Test Custom Hook</button>
       <div>
         {error && "Error"}
         {loading ? <h2>Loading...</h2> :
