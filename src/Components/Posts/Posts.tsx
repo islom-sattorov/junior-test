@@ -1,9 +1,21 @@
+import { Spinner } from '@chakra-ui/react';
 import { FC, useEffect } from 'react';
 import { getPosts } from '../../features/posts/postSlice';
 import { useAppDispatch, useAppSelector } from '../../hooks/useTypedSelector';
 import style from './Post.module.scss';
 
 export const Posts: FC = () =>{
+    return(
+        <section className={style.posts}>
+            <div className='container'>
+            <PostRender/>          
+            </div>
+        </section>
+    )
+}
+
+
+const PostRender: FC = () =>{
     const dispatch = useAppDispatch();
     const {data,error, loading} = useAppSelector((state) => state.posts);
 
@@ -20,17 +32,20 @@ export const Posts: FC = () =>{
     useEffect(() =>{
         dispatch(getPosts())
     }, [dispatch]);
-    
+ 
     return(
-        <section className={style.posts}>
-            <div className='container'>
-                {error && `Error: ${error}`}
-                {loading ? <h2>Loading...</h2> :
+        <>
+        {loading ? 
+            <Spinner
+            thickness='4px' 
+            speed='0.65s' 
+            emptyColor='gray.200' 
+            color='blue.500' 
+            size='xl'/> : 
+            error ? "Error" :
             <div className={style.posts_container}>
                 {renderedPosts}
-            </div>
-                }
-            </div>
-        </section>
+            </div>}
+        </>
     )
 }
