@@ -4,7 +4,7 @@
 
 **Run application**
 
-**\textcolor{red}{red} ALERT: Commands need to run on two different tabs of the terminal**
+**\textcolor{red}{ALERT} ALERT: Commands need to run on two different tabs of the terminal**
 
 ```
 npm start
