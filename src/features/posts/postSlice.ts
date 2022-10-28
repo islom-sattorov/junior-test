@@ -10,13 +10,12 @@ type Post = {
 const JSON_PLACEHOLDER_API = 'https://jsonplaceholder.typicode.com/posts?_limit=10';
 
 // Action
-const getPosts = createAsyncThunk("posts/getPosts", async (data, thunkApi) =>{
+export const getPosts = createAsyncThunk("posts/getPosts", async (data, thunkApi) =>{
         try{
             const response = await fetch(JSON_PLACEHOLDER_API);
             const resJson = await response.json();
             const data = await resJson;
-            console.log(data.data)
-            return data.data;
+            return data;
         }catch(err: any){
             console.error("ALERT ALERT ALERT",err)
             return thunkApi.rejectWithValue(err.message)
@@ -58,4 +57,4 @@ const postSlice = createSlice({
 
 
 export const postReducer = postSlice.reducer;
-export const {} = postSlice.actions
+// export const {} = postSlice.actions
