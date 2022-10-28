@@ -23,10 +23,12 @@ const App: FC = () => {
   })
 
 
+
    return (
     <div>
       <h2>Test</h2>
       <div>
+        {error && "Error"}
         {loading ? <h2>Loading...</h2> :
          renderedData }
       </div>
