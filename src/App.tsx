@@ -1,5 +1,5 @@
 import { FC, useEffect } from 'react';
-import './App.css';
+import './App.scss';
 import { getPosts } from './features/posts/postSlice';
 import { useAppDispatch, useAppSelector } from './hooks/useTypedSelector';
 
