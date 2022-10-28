@@ -5,14 +5,28 @@ type Post = {
     id: number;
     title: string;
     body: string;
+    category: string;
 }
 
-const JSON_PLACEHOLDER_API = 'https://jsonplaceholder.typicode.com/posts?_limit=10';
+// Server Actions
+// const JSON_SERVER = 'https://jsonplaceholder.typicode.com/posts?_limit=10';
+// const JSON_SERVER = 'https://dsafd' // Throw a error
+// const JSON_SERVER = "http://localhost:3001/posts"; // All post
+// const JSON_SERVER = "http://localhost:3001/posts?category=IT"; // only IT
+// const JSON_SERVER = "http://localhost:3001/posts?q=medicine"; // Search
+// const JSON_SERVER = "http://localhost:3001/posts?category_like=medicine"; // Search in category
+// const JSON_SERVER = "http://localhost:3001/posts?_sort=category "; // Sort by category
+// const JSON_SERVER = "http://localhost:3001/posts?_sort=category&_order=desc "; // Reverse sort by category
+// Pagination
+// const JSON_SERVER = "http://localhost:3001/posts?_limit=2"; // Limit 2
+// const JSON_SERVER = "http://localhost:3001/posts?_limit=10&_page=1"; // Limit with pages
+const JSON_SERVER = "http://localhost:3001/posts"; 
+
 
 // Action
 export const getPosts = createAsyncThunk("posts/getPosts", async (data, thunkApi) =>{
         try{
-            const response = await fetch(JSON_PLACEHOLDER_API);
+            const response = await fetch(JSON_SERVER);
             const resJson = await response.json();
             const data = await resJson;
             return data;
