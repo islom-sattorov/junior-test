@@ -22,11 +22,10 @@ const App: FC = () => {
     )
   })
 
-
-
    return (
     <div>
       <h2>Test</h2>
+      <button>Test Custom Hook</button>
       <div>
         {error && "Error"}
         {loading ? <h2>Loading...</h2> :
