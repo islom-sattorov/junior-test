@@ -1,4 +1,3 @@
-import { Spinner } from '@chakra-ui/react';
 import { FC, useEffect } from 'react';
 import { getPosts } from '../../features/posts/postSlice';
 import { useAppDispatch, useAppSelector } from '../../hooks/useTypedSelector';
@@ -36,12 +35,7 @@ const PostRender: FC = () =>{
     return(
         <>
         {loading ? 
-            <Spinner
-            thickness='4px' 
-            speed='0.65s' 
-            emptyColor='gray.200' 
-            color='blue.500' 
-            size='xl'/> : 
+           <h1>Loading</h1> : 
             error ? "Error" :
             <div className={style.posts_container}>
                 {renderedPosts}

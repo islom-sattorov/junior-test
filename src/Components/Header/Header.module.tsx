@@ -10,7 +10,7 @@ export const Header:FC = () =>{
                     <h1 className={style.header_logo}>Logo</h1>
                 </div>
                 <div className={style.header_right}>
-                    <h2>Right</h2>
+                    <h1>Right</h1>
                 </div>
                 </div>
             </div>
