@@ -2,9 +2,9 @@
 
 ## Get started
 
-**Run application**
-
 **ALERT: Commands need to run on two different tabs of the terminal**
+
+**Run application**
 
 ```
 npm start
