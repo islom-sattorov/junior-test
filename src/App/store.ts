@@ -1,9 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { dataReducer } from "../features/dataSlice";
+import { postReducer } from "../features/posts/postSlice";
 
 export const store = configureStore({
     reducer:{
-        data: dataReducer,
+        // data: dataReducer,
+        posts: postReducer,
     }
 })
+
+
+export type RootState = ReturnType<typeof store.getState>
+
+export type AddDispatch = typeof store.dispatch;
 
