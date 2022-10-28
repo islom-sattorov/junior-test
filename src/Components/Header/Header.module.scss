@@ -1,0 +1,10 @@
+.header{
+    border: 1px solid red;
+    background: pink;
+
+    #{&}_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
