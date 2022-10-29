@@ -20,8 +20,8 @@ type Post = {
 // const JSON_SERVER = "http://localhost:3001/posts?_sort=category&_order=desc "; // Reverse sort by category
 // Pagination
 // const JSON_SERVER = "http://localhost:3001/posts?_limit=2"; // Limit 2
-// const JSON_SERVER = "http://localhost:3001/posts?_limit=10&_page=1"; // Limit with pages
-const JSON_SERVER = "http://localhost:3001/posts"; 
+const JSON_SERVER = "http://localhost:3001/posts?_limit=10&_page=1"; // Limit with pages
+
 
 
 // Action
