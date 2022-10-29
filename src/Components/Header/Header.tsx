@@ -1,6 +1,10 @@
+import Avatar from '@mui/material/Avatar';
+import { deepPurple } from '@mui/material/colors';
 import axios from 'axios';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect } from "react";
+import { useDispatch } from 'react-redux';
+import { toggleStatus } from '../../features/posts/loginSlice';
 import { useAppSelector } from '../../hooks/useTypedSelector';
 import { LoginButton } from '../LoginButton/LoginButton';
 import style from './Header.module.scss';
@@ -19,29 +23,27 @@ export const Header:FC = () =>{
     const titleSize = useTransform(scrollY, offSetY, titleSizes);
     const inputWidth = useTransform(scrollY, offSetY, inputWidths);
 
+    const dispatch = useDispatch()
 
 
-const {username, password} = useAppSelector((state) => state.login);
-    const [loginData, setLoginData] = useState({
-        username: username,
-        password: password
-    })
-
-    console.log(loginData)
-
+const {username, password, status} = useAppSelector((state) => state.login);
 
     useEffect(() =>{
-        if(loginData.username !== ""){
-        axios.post(`http://localhost:3001/login`, loginData)
+        if(username !== ""){
+        axios.patch(`http://localhost:3001/login`, {
+            username: username,
+            password: password,
+        })
         .then((response) =>{
-            console.log(response)
+            if(response.status < 300 && response.data.username === "admin" && response.data.password === "admin"){
+                dispatch(toggleStatus(true))
+            }
         })
         .catch((err) => {
             console.error(err)
         })
     }
-}
-, [])
+})
 
     return(
         <motion.header 
@@ -61,8 +63,10 @@ const {username, password} = useAppSelector((state) => state.login);
                    width: inputWidth
                 }}
                  type="text" name="search" id="search" />
-                {/* <Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar> */}
+                 {status ? 
+                <Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar> : 
                 <LoginButton/>
+                }
                 </div>
                 </div>
             </div>

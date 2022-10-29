@@ -1,13 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface Init{
-    username: string;
+    username: string
     password: string
+    status: boolean
 }
 
 const initialState: Init = {
     username: "",
     password: "",
+    status: false,
 }
 
 const loginSlice = createSlice({
@@ -17,10 +19,13 @@ const loginSlice = createSlice({
         createLoginForm: (state, action) =>{
             state.username = action.payload.username;
             state.password = action.payload.password;
+        },
+        toggleStatus: (state,action) =>{
+            state.status = action.payload
         }
     }
 })
 
 export const selectAllLogin = (state: Init) => state
 export const loginReducer = loginSlice.reducer
-export const { createLoginForm } = loginSlice.actions
+export const { createLoginForm, toggleStatus } = loginSlice.actions
