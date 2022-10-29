@@ -2,11 +2,13 @@
 
     #{&}_post{
         border: 1px solid red;
+        width: 200px;
+        word-wrap: break-word;
     }
 
     #{&}_container{
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 }

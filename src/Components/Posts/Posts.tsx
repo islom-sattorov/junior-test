@@ -1,3 +1,4 @@
+import LinearProgress from '@mui/material/LinearProgress';
 import { FC, useEffect } from 'react';
 import { getPosts } from '../../features/posts/postSlice';
 import { useAppDispatch, useAppSelector } from '../../hooks/useTypedSelector';
@@ -23,6 +24,7 @@ const PostRender: FC = () =>{
             <div key={post.id} className={style.posts_post}>
                 <h2>{post.title}</h2>
                 <p>{post.category}</p>
+                <p className={style.test}>{post.subtitle}</p>
                 <span>{post.userId}</span>
             </div>
         )
@@ -34,11 +36,11 @@ const PostRender: FC = () =>{
  
     return(
         <>
-        {loading ? 
-           <h1>Loading</h1> : 
+         {loading ? 
+           <LinearProgress /> : 
             error ? "Error" :
             <div className={style.posts_container}>
-                {renderedPosts}
+            {renderedPosts}
             </div>}
         </>
     )

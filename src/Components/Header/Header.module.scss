@@ -1,10 +1,21 @@
 .header{
-    border: 1px solid red;
-    background: pink;
+    background: #170929;
+    position: sticky;
+    color: white;
+    padding: 10px;
+    top: 0;
 
     #{&}_container{
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    #{&}_sublogo{
+        font-size: 1.8rem;
+        line-height: 3.7rem;
+        word-wrap: break-word;
+        border: 1px solid red;
+        width: 70%;
     }
 }

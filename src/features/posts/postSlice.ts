@@ -6,6 +6,7 @@ type Post = {
     title: string;
     body: string;
     category: string;
+    subtitle: string;
 }
 
 // Server Actions
