@@ -1,8 +1,79 @@
-import { FC } from "react";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Modal from '@mui/material/Modal';
+import TextField from '@mui/material/TextField';
+import React, { FC, useState } from "react";
 import style from './LoginButton.module.scss';
 
+const boxStyle = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
+
 export const LoginButton: FC = () =>{
+    const [open,setOpen] = useState(false)
+    const [loginForm, setLoginForm] = useState({
+        username: "",
+        password: "",
+    });
+
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement>) =>{
+        const {name, value} = e.target;
+        setLoginForm(prev => {
+            return{
+                ...prev,
+                [name]: value
+            }
+        })
+    };
+
+    console.log(loginForm)
+
+    
+    const handleOpen = () => setOpen(true)
+
     return(
-        <button className={style.login_button}>Login</button>
+    <>
+    <button onClick={handleOpen} className={style.login}>Login</button>
+    <Modal
+    open={open}
+    onClose={() => setOpen(false)}
+    aria-labelledby="modal-modal-title"
+    aria-describedby="modal-modal-description">
+  <Box sx={boxStyle}>
+        <form className={style.login_form}>
+        <TextField 
+        error={false} 
+        label="Username"
+         variant="outlined"
+         size='small'
+         color={true ? "success" : "primary"}
+         name="username"
+         value={loginForm.username}
+        onChange={handleChange}
+         />
+        <TextField 
+        error={false}
+        label="Password"
+        variant="outlined"
+        size='small'
+        color={true ? "success" : "primary"}
+        name="password"
+        value={loginForm.password}
+        onChange={handleChange}
+        />
+        <Button type='button' variant='contained'>Secondary</Button>
+        </form>
+  </Box>
+</Modal>
+</>
     )
 }
