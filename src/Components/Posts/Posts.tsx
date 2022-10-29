@@ -29,7 +29,7 @@ const PostRender: FC = () =>{
     const [totalCount, setTotalCount] = useState<any>(() => 0)
     
     const scrollHandler = ():void =>{
-        if(document.documentElement.scrollHeight - (document.documentElement.scrollTop + window.innerHeight) < 100){
+        if(document.documentElement.scrollHeight - (document.documentElement.scrollTop + window.innerHeight) < 100 && totalCount === posts.length){
             setFetching(true)
         }
     }
@@ -47,12 +47,13 @@ const PostRender: FC = () =>{
 
     useEffect(() =>{
         if(fetching){
-            axios.get(`http://localhost:3001/posts?_limit=20&_page=${currentPage}`)
-            .then(response =>{
+            axios.get(`http://localhost:3001/posts?_limit=30&_page=${currentPage}`)
+        .then(response =>{
             setPosts([...posts, ...response.data])
             setCurrentPage(prev => prev + 1)
             setTotalCount(response.headers[`x-total-count`])
         })
+        .catch(err => setError(err))
         .finally(() => {
             setFetching(false)
         })

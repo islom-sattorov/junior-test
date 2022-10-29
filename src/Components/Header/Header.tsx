@@ -1,9 +1,8 @@
-import Avatar from '@mui/material/Avatar';
-import { deepPurple } from '@mui/material/colors';
+import axios from 'axios';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { FC } from "react";
+import { FC, useEffect } from "react";
+import { LoginButton } from '../LoginButton/LoginButton';
 import style from './Header.module.scss';
-
 
 
 
@@ -11,14 +10,29 @@ export const Header:FC = () =>{
     const {scrollY} = useScroll();
     const offSetY = [0, 400];
 
-    const heightSizes = [400, 100];
-    const titleSizes = ["4rem", "2rem"];
-    const inputPosition = ["absolute", "static"]
-    const inputPosTop = "10px"
+    const heightSizes = [300, 60];
+    const titleSizes = ["4rem", "2.4rem"];
+    const inputWidths = ["300px", "180px"]
 
-    const height = useTransform(scrollY, offSetY, heightSizes)
-    const titleSize = useTransform(scrollY, offSetY, titleSizes)
-    const inputPos = useTransform(scrollY, offSetY, inputPosition)
+    const height = useTransform(scrollY, offSetY, heightSizes);
+    const titleSize = useTransform(scrollY, offSetY, titleSizes);
+    const inputWidth = useTransform(scrollY, offSetY, inputWidths);
+
+    useEffect(() =>{
+        axios.post(`http://localhost:3001/login`, {
+            username: "admin",
+            password: "admin"
+        })
+        .then((response) =>{
+            console.log(response.data)
+        })
+        .catch((err) => {
+            console.error(err)
+        })
+        .finally(() =>{
+            console.log("End")
+        })
+    }, [])
 
     return(
         <motion.header 
@@ -33,12 +47,13 @@ export const Header:FC = () =>{
                 </div>
                 <div className={style.header_right}>
                 <motion.input
+                placeholder='search'
                 style={{
-                    position: inputPos,
-                    top: inputPosTop
+                   width: inputWidth
                 }}
                  type="text" name="search" id="search" />
-                <Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar>
+                {/* <Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar> */}
+                <LoginButton/>
                 </div>
                 </div>
             </div>
