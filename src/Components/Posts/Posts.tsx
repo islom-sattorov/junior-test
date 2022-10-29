@@ -78,6 +78,3 @@ const PostRender: FC = () =>{
 }
 
 
-
-// const dispatch = useAppDispatch();
-// const {data,error, loading} = useAppSelector((state) => state.posts);

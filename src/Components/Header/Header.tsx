@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { FC, useEffect } from "react";
+import { FC, useEffect, useState } from "react";
+import { useAppSelector } from '../../hooks/useTypedSelector';
 import { LoginButton } from '../LoginButton/LoginButton';
 import style from './Header.module.scss';
 
@@ -18,21 +19,29 @@ export const Header:FC = () =>{
     const titleSize = useTransform(scrollY, offSetY, titleSizes);
     const inputWidth = useTransform(scrollY, offSetY, inputWidths);
 
+
+
+const {username, password} = useAppSelector((state) => state.login);
+    const [loginData, setLoginData] = useState({
+        username: username,
+        password: password
+    })
+
+    console.log(loginData)
+
+
     useEffect(() =>{
-        axios.post(`http://localhost:3001/login`, {
-            username: "admin",
-            password: "admin"
-        })
+        if(loginData.username !== ""){
+        axios.post(`http://localhost:3001/login`, loginData)
         .then((response) =>{
-            console.log(response.data)
+            console.log(response)
         })
         .catch((err) => {
             console.error(err)
         })
-        .finally(() =>{
-            console.log("End")
-        })
-    }, [])
+    }
+}
+, [])
 
     return(
         <motion.header 

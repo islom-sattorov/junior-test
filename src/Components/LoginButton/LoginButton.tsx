@@ -3,6 +3,8 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import React, { FC, useState } from "react";
+import { useDispatch } from 'react-redux';
+import { createLoginForm } from '../../features/posts/loginSlice';
 import style from './LoginButton.module.scss';
 
 const boxStyle = {
@@ -17,13 +19,27 @@ const boxStyle = {
     p: 4,
   };
 
+  interface Init{
+    username: string;
+    password: string
+}
+
 export const LoginButton: FC = () =>{
     const [open,setOpen] = useState(false)
-    const [loginForm, setLoginForm] = useState({
+    const [loginForm, setLoginForm] = useState<Init>({
         username: "",
         password: "",
     });
+    const dispatch = useDispatch();
 
+
+    const handleSubmit = () =>{
+        dispatch(createLoginForm(loginForm))
+        setOpen(false)
+    }
+    
+    
+    const handleOpen = () => setOpen(true)
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement>) =>{
         const {name, value} = e.target;
@@ -35,10 +51,9 @@ export const LoginButton: FC = () =>{
         })
     };
 
-    console.log(loginForm)
+
 
     
-    const handleOpen = () => setOpen(true)
 
     return(
     <>
@@ -70,7 +85,9 @@ export const LoginButton: FC = () =>{
         value={loginForm.password}
         onChange={handleChange}
         />
-        <Button type='button' variant='contained'>Secondary</Button>
+        <Button onClick={() =>{
+            handleSubmit()
+        }} type='button' variant='contained'>Secondary</Button>
         </form>
   </Box>
 </Modal>
