@@ -3,8 +3,9 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import React, { FC, useState } from "react";
-import { useDispatch } from 'react-redux';
-import { createLoginForm } from '../../features/posts/loginSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { createLoginForm, selectAllLogin } from '../../features/login/loginSlice';
+import { addNotification } from '../../features/notification/notificationSlice';
 import style from './LoginButton.module.scss';
 
 const boxStyle = {
@@ -32,10 +33,24 @@ export const LoginButton: FC = () =>{
     });
     const dispatch = useDispatch();
 
+    const {status} = useSelector(selectAllLogin);
+
+    console.log(status)
+
 
     const handleSubmit = () =>{
         dispatch(createLoginForm(loginForm))
         setOpen(false)
+        if(status){
+        dispatch(addNotification({type: true, message: `Hello ${loginForm.username}`}))
+        }
+        dispatch(addNotification({type: false, message: `This user doesn't exist, please try again`}))
+
+        setLoginForm({
+            username: "",
+            password: "",
+        })
+
     }
     
     

@@ -26,6 +26,6 @@ const loginSlice = createSlice({
     }
 })
 
-export const selectAllLogin = (state: Init) => state
+export const selectAllLogin = (state: any) => state.login
 export const loginReducer = loginSlice.reducer
 export const { createLoginForm, toggleStatus } = loginSlice.actions

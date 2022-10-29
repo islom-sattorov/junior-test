@@ -3,9 +3,8 @@ import { deepPurple } from '@mui/material/colors';
 import axios from 'axios';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { FC, useEffect } from "react";
-import { useDispatch } from 'react-redux';
-import { toggleStatus } from '../../features/posts/loginSlice';
-import { useAppSelector } from '../../hooks/useTypedSelector';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectAllLogin, toggleStatus } from '../../features/login/loginSlice';
 import { LoginButton } from '../LoginButton/LoginButton';
 import style from './Header.module.scss';
 
@@ -26,10 +25,11 @@ export const Header:FC = () =>{
     const dispatch = useDispatch()
 
 
-const {username, password, status} = useAppSelector((state) => state.login);
+const {username, password, status} = useSelector(selectAllLogin);
+
 
     useEffect(() =>{
-        if(username !== ""){
+        if(username !== "" && username !== undefined){
         axios.patch(`http://localhost:3001/login`, {
             username: username,
             password: password,
