@@ -1,16 +1,18 @@
 import Avatar from '@mui/material/Avatar';
 import { deepPurple } from '@mui/material/colors';
+import Popover from '@mui/material/Popover';
 import axios from 'axios';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { FC, useEffect } from "react";
+import { FC, useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { selectAllLogin, toggleStatus } from '../../features/login/loginSlice';
 import { LoginButton } from '../LoginButton/LoginButton';
 import style from './Header.module.scss';
 
 
-
 export const Header:FC = () =>{
+    const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
+    
     const {scrollY} = useScroll();
     const offSetY = [0, 400];
 
@@ -27,6 +29,18 @@ export const Header:FC = () =>{
 
 const {username, password, status} = useSelector(selectAllLogin);
 
+    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) =>{
+        setAnchorEl(event.currentTarget);
+    }
+
+    const handleClose = () => {
+        setAnchorEl(null);
+      };
+
+      const open = Boolean(anchorEl);
+      const id = open ? 'simple-popover' : undefined;
+
+
 
     useEffect(() =>{
         if(username !== "" && username !== undefined){
@@ -35,7 +49,7 @@ const {username, password, status} = useSelector(selectAllLogin);
             password: password,
         })
         .then((response) =>{
-            if(response.status < 300 && response.data.username === "admin" && response.data.password === "admin"){
+            if(response.status < 300 && response.data.username === "admin" && response.data.password === "admin" && !status){
                 dispatch(toggleStatus(true))
             }
         })
@@ -64,7 +78,20 @@ const {username, password, status} = useSelector(selectAllLogin);
                 }}
                  type="text" name="search" id="search" />
                  {status ? 
-                <Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar> : 
+                 <>
+                <button className={style.avatar_btn} onClick={handleClick}><Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar></button>
+                <Popover
+                id={id}
+                open={open}
+                anchorEl={anchorEl}
+                onClose={handleClose}
+                anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'center',}}>
+                <button className={style.exit_login}>Exit</button>
+                </Popover>
+                </>
+                 : 
                 <LoginButton/>
                 }
                 </div>
