@@ -99,7 +99,7 @@ export const Header:FC = () =>{
     // Handle submit Form
     const handleSubmit =  () =>{
         setOpenModal(false)
-        patchAds({
+        postAds({
             title: adsForm.title,
              subtitle: adsForm.subtitle, 
              category: adsForm.category,
@@ -126,7 +126,7 @@ export const Header:FC = () =>{
 
 
       // POST request 
-      const patchAds =  (props: PostReq) =>{
+      const postAds =  (props: PostReq) =>{
         axios.post(`http://localhost:3001/posts/`, {
             id: nanoid(),
             title: props.title.toLowerCase(),
