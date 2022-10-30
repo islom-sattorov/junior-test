@@ -74,7 +74,7 @@ export const LoginButton: FC = () =>{
         <Box sx={boxStyle}>
             <form className={style.login_form}>
             <TextField 
-            error={false} 
+            error={loginForm.username.length < 4 ? true : false} 
             label="Username"
             variant="outlined"
             size='small'
@@ -84,7 +84,7 @@ export const LoginButton: FC = () =>{
             onChange={handleChange}
          />
             <TextField 
-            error={false}
+            error={loginForm.password.length < 4 ? true : false} 
             label="Password"
             variant="outlined"
             size='small'
@@ -93,9 +93,14 @@ export const LoginButton: FC = () =>{
             value={loginForm.password}
             onChange={handleChange}
             />
-        <Button onClick={() =>{
+            {(loginForm.username.length < 4 || loginForm.password.length < 4) && <h3>Имя и пароль должны содержать 4 или более символов</h3>}
+        <Button 
+        onClick={() =>{
             handleSubmit()
-        }} type='button' variant='contained'>Secondary</Button>
+        }} 
+        type='button'
+         disabled={(loginForm.username.length < 4 || loginForm.password.length < 4) ? true : false} 
+         variant='contained'>Log in</Button>
         </form>
   </Box>
 </Modal>
