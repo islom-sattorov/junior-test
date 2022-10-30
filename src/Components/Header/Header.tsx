@@ -89,6 +89,7 @@ export const Header:FC = () =>{
             experience: props.experience,
         })
         .then((response) =>{
+            dispatch(addNotification({type: true, message: "Successfully Advertised"}))
             console.log(response)
         })
         .catch((err) => {

@@ -75,7 +75,6 @@ export default function CustomizedTables() {
 
 
     useEffect(() =>{
-        console.log("render")
         axios.get(`http://localhost:3001/posts?_limit=10&_page=${pageRef.current}`)
         .then(response =>{
             setPosts([...posts, ...response.data])
