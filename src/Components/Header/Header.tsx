@@ -168,7 +168,6 @@ export const Header:FC = () =>{
 useEffect(() =>{
     if(JSON.parse(localStorage.getItem("status") || "")){
         dispatch(toggleStatus(true))
-
     }
 }, [])
     return(
@@ -227,14 +226,6 @@ useEffect(() =>{
    id="outlined-basic" 
    label="Название" 
    variant="outlined" />      
-  {/* <TextField
-   value={adsForm.category}
-   name='category'
-   onChange={handleChange}
-   id="outlined-basic"
-   label="Категория"
-   variant="outlined"
-        />       */}
    <TextField
           id="outlined-select-currency"
           select
@@ -284,20 +275,3 @@ useEffect(() =>{
     </motion.header>
     )
 }
-
-
-
-// Local Storage 
-    // useEffect(() =>{
-    //     if(status){
-    //         localStorage.setItem("statusLogin", JSON.stringify(true))
-    //     }else if(!status){
-    //         localStorage.setItem("statusLogin", JSON.stringify(false))
-    //     }
-    // })
-
-    // useEffect(() =>{
-    //     if(JSON.parse(localStorage.getItem("statusLogin") || "")){
-    //         dispatch(toggleStatus(true))
-    //     }
-    // })

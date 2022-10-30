@@ -29,7 +29,7 @@ username: admin
 password: admin
 ```
 
-When you log in, a **PATCH** request is sent to the local json server, and provided that it returns you `status < 300`, the login will be successful.
+When you log in, a **PATCH** request is sent to the local json server, and provided that it returns you `status < 300`, the login will be successful. And the login status is saved to localStorage, and after restarting the login need not be repeated.
 
 Once you have logged in, you have the opportunity to add new vacancies to the roster.
 
