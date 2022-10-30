@@ -186,7 +186,8 @@ const [openModal, setOpenModal] = useState(false);
                    width: inputWidth
                 }}
                  type="text" name="search" id="search" />
-                 <button onClick={handleOpenModal} className={style.add_btn}>+</button>
+                 {status &&
+                 <button onClick={handleOpenModal} className={style.add_btn}>+</button>}
                  {status ? 
                  <>
                 <button className={style.avatar_btn} onClick={handleClick}><Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar></button>
@@ -216,7 +217,6 @@ const [openModal, setOpenModal] = useState(false);
   <Box sx={boxStyle}>
     <form className={style.header_add_table}>
   <TextField name='title' onChange={handleChange} id="outlined-basic" label="Название" variant="outlined" />      
-  <TextField name='id' onChange={handleChange} id="outlined-basic" label="ID" variant="outlined" />      
   <TextField name='category' onChange={handleChange} id="outlined-basic" label="Категория" variant="outlined" />      
   <TextField name='subtitle' onChange={handleChange} id="outlined-basic" label="Требования" variant="outlined" />      
   <TextField name='experience' onChange={handleChange} id="outlined-basic" label="Опыт" variant="outlined" />      
