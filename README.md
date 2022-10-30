@@ -47,5 +47,5 @@ To contact me: [Telegram](https://t.me/siaxxw)
 - React
 - JSON Server
 - AXIOS (GET, POST, PATCH)
-- Redux
+- Redux@toolkit
 - MUI
