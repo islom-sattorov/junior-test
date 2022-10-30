@@ -120,6 +120,7 @@ export const Header:FC = () =>{
     const handleClose = () => setAnchorEl(null);
 
     const handleExit = () =>{
+        localStorage.setItem('status', JSON.stringify(false))
         dispatch(exitLogin({username: "", password: "", status: false}))
         dispatch(addNotification({type: false, message: "logged out "}))
     }
@@ -154,6 +155,7 @@ export const Header:FC = () =>{
         })
         .then((response) =>{
             if(response.status < 300 && response.data.username.toLowerCase() === "admin" && response.data.password.toLowerCase() === "admin" && !status){
+                localStorage.setItem('status', JSON.stringify(true))
                 dispatch(toggleStatus(true))
             }
         })
@@ -162,6 +164,13 @@ export const Header:FC = () =>{
         })
     }
 })
+
+useEffect(() =>{
+    if(JSON.parse(localStorage.getItem("status") || "")){
+        dispatch(toggleStatus(true))
+
+    }
+}, [])
     return(
         <motion.header 
         style={{height}}
