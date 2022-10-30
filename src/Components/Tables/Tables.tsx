@@ -86,7 +86,6 @@ export default function CustomizedTables() {
         })
         .catch(err => {
             setError(err)
-            console.error(err)
         })
         .finally(() => {
             setFetching(false)
