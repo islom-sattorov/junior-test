@@ -125,7 +125,7 @@ export const Header:FC = () =>{
     }
 
 
-      // Patch request 
+      // POST request 
       const patchAds =  (props: PostReq) =>{
         axios.post(`http://localhost:3001/posts/`, {
             id: nanoid(),
