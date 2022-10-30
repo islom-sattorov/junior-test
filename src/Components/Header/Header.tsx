@@ -54,6 +54,7 @@ export const Header:FC = () =>{
 
     const handleSubmit =  () =>{
         setOpenModal(false)
+        patchAds();
         setAdsForm({
             id: 0,
             title: "",
@@ -64,7 +65,22 @@ export const Header:FC = () =>{
         })
     }
 
-    console.log(adsForm)
+    const patchAds =  () =>{
+        axios.post(`http://localhost:3001/posts/`, {
+            id: 1,
+            title: "Frontend Developer",
+            subtitle: "HTML CSS JS TS React",
+            category: "IT",
+            salary: 3000,
+            experience: "1 год",
+        })
+        .then((response) =>{
+            console.log(response)
+        })
+        .catch((err) => {
+            console.error(err)
+        })
+    }
     
     // Frame Motion
     const {scrollY} = useScroll();

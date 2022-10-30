@@ -328,7 +328,6 @@
       "salary": 4000,
       "experience": "2 год"
     },
-           
     {
       "id": 42,
       "title": "Doctor",
@@ -337,7 +336,6 @@
       "salary": 4000,
       "experience": "2 год"
     },
-           
     {
       "id": 43,
       "title": "Doctor",
@@ -346,7 +344,6 @@
       "salary": 4000,
       "experience": "2 год"
     },
-           
     {
       "id": 44,
       "title": "Doctor",
@@ -355,7 +352,6 @@
       "salary": 4000,
       "experience": "2 год"
     },
-           
     {
       "id": 45,
       "title": "Doctor",
@@ -364,7 +360,6 @@
       "salary": 4000,
       "experience": "2 год"
     },
-           
     {
       "id": 46,
       "title": "Doctor",
@@ -373,7 +368,6 @@
       "salary": 4000,
       "experience": "2 год"
     },
-           
     {
       "id": 47,
       "title": "Doctor",
@@ -382,7 +376,6 @@
       "salary": 4000,
       "experience": "2 год"
     },
-           
     {
       "id": 48,
       "title": "Doctor",
@@ -1526,8 +1519,8 @@
       "category": "Medicine",
       "salary": 4000,
       "experience": "2 год"
-    }      
-     ],
+    },
+  ],
   "login": {
     "username": "admin",
     "password": "admin"
