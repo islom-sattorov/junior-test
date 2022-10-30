@@ -1,19 +1,19 @@
 # Alif Junior Test
 
-## Get started
+## How to start
 
 **ALERT: Commands need to run on two different tabs of the terminal**
+
+**Run JSON Server**
+
+```
+npm run server
+```
 
 **Run application**
 
 ```
 npm start
-```
-
-Run JSON Server
-
-```
-npm server
 ```
 
 ## Tech
@@ -22,4 +22,6 @@ npm server
 - CSS (SCSS)
 - TypeScript
 - React
-- JSON Server
+- JSON Server (GET, POST)
+- Redux
+- MUI
