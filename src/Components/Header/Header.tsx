@@ -25,9 +25,6 @@ import style from './Header.module.scss';
     experience: number | string,
   }
 
- 
-
-
 export const Header:FC = () =>{
     const adsCategories = [
         {
