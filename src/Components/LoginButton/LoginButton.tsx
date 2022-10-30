@@ -37,7 +37,9 @@ export const LoginButton: FC = () =>{
         dispatch(createLoginForm(loginForm))
         setOpen(false)
         if(loginForm.username === "admin"){
-        dispatch(addNotification({type: true, message: `Hello ${loginForm.username}`}))
+        
+            dispatch(addNotification({type: true, message: `Hello ${loginForm.username}`}))
+        localStorage.setItem("statusLogin", JSON.stringify(true))
         }else{
         dispatch(addNotification({type: false, message: `This user doesn't exist, please try again`}))
     }
@@ -46,7 +48,6 @@ export const LoginButton: FC = () =>{
             password: "",
         })
     }
-    
     
     const handleOpen = () => setOpen(true)
     const handleChange = (
@@ -60,9 +61,7 @@ export const LoginButton: FC = () =>{
         })
     };
 
-
-
-    
+   
 
     return(
     <>
@@ -72,28 +71,28 @@ export const LoginButton: FC = () =>{
     onClose={() => setOpen(false)}
     aria-labelledby="modal-modal-title"
     aria-describedby="modal-modal-description">
-  <Box sx={boxStyle}>
-        <form className={style.login_form}>
-        <TextField 
-        error={false} 
-        label="Username"
-         variant="outlined"
-         size='small'
-         color={true ? "success" : "primary"}
-         name="username"
-         value={loginForm.username}
-        onChange={handleChange}
+        <Box sx={boxStyle}>
+            <form className={style.login_form}>
+            <TextField 
+            error={false} 
+            label="Username"
+            variant="outlined"
+            size='small'
+            color={true ? "success" : "primary"}
+            name="username"
+            value={loginForm.username}
+            onChange={handleChange}
          />
-        <TextField 
-        error={false}
-        label="Password"
-        variant="outlined"
-        size='small'
-        color={true ? "success" : "primary"}
-        name="password"
-        value={loginForm.password}
-        onChange={handleChange}
-        />
+            <TextField 
+            error={false}
+            label="Password"
+            variant="outlined"
+            size='small'
+            color={true ? "success" : "primary"}
+            name="password"
+            value={loginForm.password}
+            onChange={handleChange}
+            />
         <Button onClick={() =>{
             handleSubmit()
         }} type='button' variant='contained'>Secondary</Button>

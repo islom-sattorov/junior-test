@@ -13,42 +13,44 @@ import style from './Header.module.scss';
 
 
 export const Header:FC = () =>{
-    const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
+    // Mui Popover
+    const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null | undefined>();
     
+    // Frame Motion
     const {scrollY} = useScroll();
     const offSetY = [0, 400];
-
+    
     const heightSizes = [300, 60];
     const titleSizes = ["4rem", "2.4rem"];
     const inputWidths = ["300px", "180px"]
-
+    
     const height = useTransform(scrollY, offSetY, heightSizes);
     const titleSize = useTransform(scrollY, offSetY, titleSizes);
     const inputWidth = useTransform(scrollY, offSetY, inputWidths);
-
+    
+    // Redux
     const dispatch = useDispatch()
-
-
-const {username, password, status} = useSelector(selectAllLogin);
+    const {username, password, status} = useSelector(selectAllLogin);
 
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) =>{
         setAnchorEl(event.currentTarget);
-    }
+    };
 
     const handleClose = () => {
         setAnchorEl(null);
-      };
+    };
 
-      const open = Boolean(anchorEl);
-      const id = open ? 'simple-popover' : undefined;
+    const open = Boolean(anchorEl);
+    const id = open ? 'simple-popover' : undefined;
 
 
-      const handleExit = () =>{
+    const handleExit = () =>{
         dispatch(exitLogin({username: "", password: "", status: false}))
         dispatch(addNotification({type: false, message: "logged out "}))
-      }
+    }
 
 
+    // Post Request
     useEffect(() =>{
         if(username !== "" && username !== undefined){
         axios.patch(`http://localhost:3001/login`, {
@@ -66,12 +68,27 @@ const {username, password, status} = useSelector(selectAllLogin);
     }
 })
 
+// Local Storage 
+    // useEffect(() =>{
+    //     if(status){
+    //         localStorage.setItem("statusLogin", JSON.stringify(true))
+    //     }else if(!status){
+    //         localStorage.setItem("statusLogin", JSON.stringify(false))
+    //     }
+    // })
+
+    // useEffect(() =>{
+    //     if(JSON.parse(localStorage.getItem("statusLogin") || "")){
+    //         dispatch(toggleStatus(true))
+    //     }
+    // })
+
     return(
         <motion.header 
         style={{height}}
         className={style.header}>
             <div className="container">
-                <div className={style.header_container}>  {/* Flex */}
+                <div className={style.header_container}> 
                 <div className={style.header_left}>
                     <motion.h1 style={{
                         fontSize: titleSize
