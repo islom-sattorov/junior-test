@@ -31,6 +31,40 @@ const boxStyle = {
 export const Header:FC = () =>{
     // Mui Popover
     const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null | undefined>();
+    const [adsForm, setAdsForm] = useState({
+        id: 0,
+        title: "",
+        subtitle: "",
+        category: "",
+        experience: "",
+        salary: 0,
+    })
+
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement>) =>{
+        const {name, value} = e.target;
+        setAdsForm(prev => {
+            return{
+                ...prev,
+                [name]: value
+            }
+        })
+    };
+
+
+    const handleSubmit =  () =>{
+        setOpenModal(false)
+        setAdsForm({
+            id: 0,
+            title: "",
+            subtitle: "",
+            category: "",
+            experience: "",
+            salary: 0,
+        })
+    }
+
+    console.log(adsForm)
     
     // Frame Motion
     const {scrollY} = useScroll();
@@ -150,13 +184,15 @@ const [openModal, setOpenModal] = useState(false);
   aria-describedby="modal-modal-description"
 >
   <Box sx={boxStyle}>
-  <TextField id="outlined-basic" label="Название" variant="outlined" />      
-  <TextField id="outlined-basic" label="ID" variant="outlined" />      
-  <TextField id="outlined-basic" label="Категория" variant="outlined" />      
-  <TextField id="outlined-basic" label="Требования" variant="outlined" />      
-  <TextField id="outlined-basic" label="Опыт" variant="outlined" />      
-  <TextField id="outlined-basic" label="Зарплата" variant="outlined" />      
-<Button variant="contained">Submit</Button>
+    <form className={style.header_add_table}>
+  <TextField name='title' onChange={handleChange} id="outlined-basic" label="Название" variant="outlined" />      
+  <TextField name='id' onChange={handleChange} id="outlined-basic" label="ID" variant="outlined" />      
+  <TextField name='category' onChange={handleChange} id="outlined-basic" label="Категория" variant="outlined" />      
+  <TextField name='subtitle' onChange={handleChange} id="outlined-basic" label="Требования" variant="outlined" />      
+  <TextField name='experience' onChange={handleChange} id="outlined-basic" label="Опыт" variant="outlined" />      
+  <TextField name='salary' onChange={handleChange} id="outlined-basic" label="Зарплата" variant="outlined" />      
+  <Button onClick={handleSubmit} type='button' size='large' variant="contained">Submit</Button>
+</form>
 
     </Box>
 </Modal>

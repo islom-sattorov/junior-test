@@ -63,3 +63,9 @@
         transform: scale(1.7);
     }
 }
+
+.header_add_table{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
