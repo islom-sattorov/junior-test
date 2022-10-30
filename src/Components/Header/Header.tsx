@@ -1,5 +1,9 @@
+import { TextField } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
+import Button from "@mui/material/Button";
 import { deepPurple } from '@mui/material/colors';
+import Modal from '@mui/material/Modal';
 import Popover from '@mui/material/Popover';
 import axios from 'axios';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -10,6 +14,18 @@ import { addNotification } from '../../features/notification/notificationSlice';
 import { LoginButton } from '../LoginButton/LoginButton';
 import style from './Header.module.scss';
 
+
+const boxStyle = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
 
 
 export const Header:FC = () =>{
@@ -69,9 +85,9 @@ export const Header:FC = () =>{
 })
 
 // Post add
-const handleAdd = () => {
-    console.log("Add")
-}
+const [openModal, setOpenModal] = useState(false);
+  const handleOpenModal = () => setOpenModal(true);
+  const handleCloseModal = () => setOpenModal(false)
 
 // Local Storage 
     // useEffect(() =>{
@@ -106,7 +122,7 @@ const handleAdd = () => {
                    width: inputWidth
                 }}
                  type="text" name="search" id="search" />
-                 <button onClick={handleAdd} className={style.add_btn}>+</button>
+                 <button onClick={handleOpenModal} className={style.add_btn}>+</button>
                  {status ? 
                  <>
                 <button className={style.avatar_btn} onClick={handleClick}><Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar></button>
@@ -127,6 +143,24 @@ const handleAdd = () => {
                 </div>
                 </div>
             </div>
+            <Modal
+  open={openModal}
+  onClose={handleCloseModal}
+  aria-labelledby="modal-modal-title"
+  aria-describedby="modal-modal-description"
+>
+  <Box sx={boxStyle}>
+  <TextField id="outlined-basic" label="Название" variant="outlined" />      
+  <TextField id="outlined-basic" label="ID" variant="outlined" />      
+  <TextField id="outlined-basic" label="Категория" variant="outlined" />      
+  <TextField id="outlined-basic" label="Требования" variant="outlined" />      
+  <TextField id="outlined-basic" label="Опыт" variant="outlined" />      
+  <TextField id="outlined-basic" label="Зарплата" variant="outlined" />      
+<Button variant="contained">Submit</Button>
+
+    </Box>
+</Modal>
         </motion.header>
+
     )
 }
