@@ -101,6 +101,7 @@ export const Header:FC = () =>{
                    width: inputWidth
                 }}
                  type="text" name="search" id="search" />
+                 <button className={style.add_btn}>+</button>
                  {status ? 
                  <>
                 <button className={style.avatar_btn} onClick={handleClick}><Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar></button>
