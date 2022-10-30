@@ -16,7 +16,10 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     color: theme.palette.common.white,
     fontSize: 22,
     textAlign: "center",
-    border: "1px solid white"
+    border: "1px solid white",
+    // position: "fixed",
+    // top: "117px",
+    // width: "400px"
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 22,
@@ -75,7 +78,6 @@ export default function CustomizedTables() {
 
 
     useEffect(() =>{
-        console.log("render")
         axios.get(`http://localhost:3001/posts?_limit=10&_page=${pageRef.current}`)
         .then(response =>{
             setPosts([...posts, ...response.data])
@@ -100,7 +102,6 @@ export default function CustomizedTables() {
 
   return (
     <TableContainer component={Paper}>
-    <h2>Вакансии</h2>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>

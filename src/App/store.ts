@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { boxStyleReducer } from "../features/boxStyle/boxStyleSlice";
 import { loginReducer } from "../features/login/loginSlice";
 import { notificationReducer } from "../features/notification/notificationSlice";
 
@@ -8,6 +9,7 @@ export const store = configureStore({
         // posts: postReducer,
         login: loginReducer,
         notification: notificationReducer,
+        boxStyle: boxStyleReducer,
     }
 })
 
