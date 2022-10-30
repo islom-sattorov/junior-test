@@ -3,604 +3,1012 @@
     {
       "id": 1,
       "title": "Frontend Developer",
-      "subtitle": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
       "id": 2,
       "title": "Frontend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
       "id": 3,
       "title": "Frontend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
       "id": 4,
       "title": "Frontend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
       "id": 5,
       "title": "Frontend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
       "id": 6,
       "title": "Frontend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
       "id": 7,
       "title": "Frontend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
       "id": 8,
       "title": "Frontend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
       "id": 9,
       "title": "Frontend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
       "id": 10,
       "title": "Frontend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
     {
-      "id": 11,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 12,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 13,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 14,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 15,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 16,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 17,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 18,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 19,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 20,
-      "title": "Backend Developer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "IT"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 21,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 22,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 23,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 24,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 25,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 26,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 27,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 28,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 29,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 30,
-      "title": "Doctor",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Medicine"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 31,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 32,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 33,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 34,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 35,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 36,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 37,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 38,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 39,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 40,
-      "title": "Chef",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Restaurant"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 41,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 42,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 43,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 44,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 45,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 46,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 47,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 48,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 49,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 50,
-      "title": "Farmer",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Farming"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 51,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 52,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 53,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 54,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 55,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 56,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 57,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 58,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 59,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 60,
-      "title": "Electrician",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Heb"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 61,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 62,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 63,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 64,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 65,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 66,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 67,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 68,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 69,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 70,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 71,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 72,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 73,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 74,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 75,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 76,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 77,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 78,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 79,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 80,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 81,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 82,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 83,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 84,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 85,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 86,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 87,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 88,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 89,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 90,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 91,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 92,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 93,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 94,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 95,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 96,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 97,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 98,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 99,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     },
     {
-      "id": 100,
-      "title": "Accountant",
-      "subtitle": "Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-      "category": "Economy"
+      "id": 10,
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     }
-  ],
+     ],
   "login": {
     "username": "admin",
     "password": "admin"
