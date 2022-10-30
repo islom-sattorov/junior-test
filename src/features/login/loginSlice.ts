@@ -22,10 +22,15 @@ const loginSlice = createSlice({
         },
         toggleStatus: (state,action) =>{
             state.status = action.payload
+        },
+        exitLogin: (state, action) =>{
+            state.username = action.payload.username;
+            state.password = action.payload.password;
+            state.status = action.payload.status;
         }
     }
 })
 
 export const selectAllLogin = (state: any) => state.login
 export const loginReducer = loginSlice.reducer
-export const { createLoginForm, toggleStatus } = loginSlice.actions
+export const { createLoginForm, toggleStatus, exitLogin } = loginSlice.actions

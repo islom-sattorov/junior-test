@@ -1,13 +1,14 @@
 import { FC } from 'react';
 import { Header } from './Components/Header/Header';
 import { Notification } from './Components/Notification/Notification';
-import { Posts } from './Components/Posts/Posts';
+import CustomizedTables from './Components/Tables/Tables';
 
 const App: FC = () => {
 return (
     <>
       <Header/>
-      <Posts/>
+      {/* <Posts/> */}
+      <CustomizedTables/>
       <Notification/>
     </>
   );
