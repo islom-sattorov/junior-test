@@ -50,7 +50,7 @@ export const Header:FC = () =>{
     }
 
 
-    // Post Request
+    // Post Request Login
     useEffect(() =>{
         if(username !== "" && username !== undefined){
         axios.patch(`http://localhost:3001/login`, {
@@ -67,6 +67,11 @@ export const Header:FC = () =>{
         })
     }
 })
+
+// Post add
+const handleAdd = () => {
+    console.log("Add")
+}
 
 // Local Storage 
     // useEffect(() =>{
@@ -101,7 +106,7 @@ export const Header:FC = () =>{
                    width: inputWidth
                 }}
                  type="text" name="search" id="search" />
-                 <button className={style.add_btn}>+</button>
+                 <button onClick={handleAdd} className={style.add_btn}>+</button>
                  {status ? 
                  <>
                 <button className={style.avatar_btn} onClick={handleClick}><Avatar sx={{ bgcolor: deepPurple[500] }}>I</Avatar></button>
