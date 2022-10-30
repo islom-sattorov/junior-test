@@ -36,9 +36,8 @@ export const LoginButton: FC = () =>{
     const handleSubmit =  () =>{
         dispatch(createLoginForm(loginForm))
         setOpen(false)
-        if(loginForm.username === "admin"){
-        
-            dispatch(addNotification({type: true, message: `Hello ${loginForm.username}`}))
+        if(loginForm.username.toLowerCase() === "admin"){
+        dispatch(addNotification({type: true, message: `Hello ${loginForm.username.toLowerCase()}`}))
         localStorage.setItem("statusLogin", JSON.stringify(true))
         }else{
         dispatch(addNotification({type: false, message: `This user doesn't exist, please try again`}))

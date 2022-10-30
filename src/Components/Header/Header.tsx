@@ -135,11 +135,11 @@ export const Header:FC = () =>{
     useEffect(() =>{
         if(username !== "" && username !== undefined){
         axios.patch(`http://localhost:3001/login`, {
-            username: username,
-            password: password,
+            username: username.toLowerCase(),
+            password: password.toLowerCase(),
         })
         .then((response) =>{
-            if(response.status < 300 && response.data.username === "admin" && response.data.password === "admin" && !status){
+            if(response.status < 300 && response.data.username.toLowerCase() === "admin" && response.data.password.toLowerCase() === "admin" && !status){
                 dispatch(toggleStatus(true))
             }
         })
