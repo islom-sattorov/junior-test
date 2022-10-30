@@ -5,9 +5,11 @@ import axios from 'axios';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { FC, useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { selectAllLogin, toggleStatus } from '../../features/login/loginSlice';
+import { exitLogin, selectAllLogin, toggleStatus } from '../../features/login/loginSlice';
+import { addNotification } from '../../features/notification/notificationSlice';
 import { LoginButton } from '../LoginButton/LoginButton';
 import style from './Header.module.scss';
+
 
 
 export const Header:FC = () =>{
@@ -40,6 +42,11 @@ const {username, password, status} = useSelector(selectAllLogin);
       const open = Boolean(anchorEl);
       const id = open ? 'simple-popover' : undefined;
 
+
+      const handleExit = () =>{
+        dispatch(exitLogin({username: "", password: "", status: false}))
+        dispatch(addNotification({type: false, message: "logged out "}))
+      }
 
 
     useEffect(() =>{
@@ -88,7 +95,7 @@ const {username, password, status} = useSelector(selectAllLogin);
                 anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'center',}}>
-                <button className={style.exit_login}>Exit</button>
+                <button onClick={handleExit} className={style.exit_login}>Exit</button>
                 </Popover>
                 </>
                  : 
