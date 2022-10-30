@@ -174,12 +174,12 @@ export const Header:FC = () =>{
                     }} className={style.header_logo}>Работяга</motion.h1>
                 </div>
                 <div className={style.header_right}>
-                <motion.input
+                {/* <motion.input
                 placeholder='search'
                 style={{
                    width: inputWidth
                 }}
-                 type="text" name="search" id="search" />
+                 type="text" name="search" id="search" /> */}
                  {status &&
                  <button onClick={handleOpenModal} className={style.add_btn}>+</button>}
                  {status ? 
