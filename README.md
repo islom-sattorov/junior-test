@@ -35,6 +35,10 @@ Once you have logged in, you have the opportunity to add new vacancies to the ro
 
 Vacancies are added by **POST** method to local json server and returns the added value and the REACT draws it in the table.
 
+All your actions will be accompanied by wonderful notifications
+
+To contact me: [[https://t.me/siaxxw]]
+
 ## Tech
 
 - HTML(Semantic)
