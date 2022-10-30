@@ -14,9 +14,14 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
+    fontSize: 22,
+    textAlign: "center",
+    border: "1px solid white"
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 14,
+    fontSize: 22,
+    border: "1px solid black",
+    textAlign: "center"
   },
 }));
 
@@ -26,7 +31,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
   // hide last border
   '&:last-child td, &:last-child th': {
-    border: 0,
+    border: 10,
   },
 }));
 
@@ -50,19 +55,12 @@ function createData(
   return { title, id, subtitle, category, salary, experience };
 }
 
-
-
-
-
-
-
-
 export default function CustomizedTables() {
     const [posts, setPosts] = useState<Post[]>(() => []);
     const [error, setError] = useState<unknown>();
     const [fetching, setFetching] = useState(() => true) 
     const [totalCount, setTotalCount] = useState<any>(() => 0)
-    const pageRef = useRef(0)
+    const pageRef = useRef(1)
 
     const rows = posts.map((post) =>{
        return createData(post.title, post.id, post.subtitle, post.category, post.salary, post.experience)
