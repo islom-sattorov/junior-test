@@ -1520,6 +1520,22 @@
       "salary": 4000,
       "experience": "2 год"
     },
+    {
+      "id": "0qkQN0nk_7V5bhWpmjiZg",
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
+    },
+    {
+      "id": "PvhW_g-qJgYHtPu_CKKOE",
+      "title": "Рабочий ",
+      "subtitle": "фвыфвыф",
+      "category": "выф",
+      "salary": "1212",
+      "experience": "выфв"
+    }
   ],
   "login": {
     "username": "admin",

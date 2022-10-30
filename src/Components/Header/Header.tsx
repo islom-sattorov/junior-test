@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import { deepPurple } from '@mui/material/colors';
 import Modal from '@mui/material/Modal';
 import Popover from '@mui/material/Popover';
+import { nanoid } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { FC, useEffect, useState } from "react";
@@ -26,6 +27,14 @@ const boxStyle = {
     boxShadow: 24,
     p: 4,
   };
+
+  interface PostReq {
+    title: string,
+    subtitle: string,
+    category: string,
+    salary: number,
+    experience: number | string,
+  }
 
 
 export const Header:FC = () =>{
@@ -54,7 +63,12 @@ export const Header:FC = () =>{
 
     const handleSubmit =  () =>{
         setOpenModal(false)
-        patchAds();
+        patchAds({
+            title: adsForm.title,
+             subtitle: adsForm.subtitle, 
+             category: adsForm.category,
+             salary: adsForm.salary,
+             experience: adsForm.experience});
         setAdsForm({
             id: 0,
             title: "",
@@ -65,14 +79,14 @@ export const Header:FC = () =>{
         })
     }
 
-    const patchAds =  () =>{
+    const patchAds =  (props: PostReq) =>{
         axios.post(`http://localhost:3001/posts/`, {
-            id: 1,
-            title: "Frontend Developer",
-            subtitle: "HTML CSS JS TS React",
-            category: "IT",
-            salary: 3000,
-            experience: "1 год",
+            id: nanoid(),
+            title: props.title,
+            subtitle: props.subtitle,
+            category: props.category,
+            salary: props.salary,
+            experience: props.experience,
         })
         .then((response) =>{
             console.log(response)
