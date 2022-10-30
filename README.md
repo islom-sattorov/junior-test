@@ -37,7 +37,7 @@ Vacancies are added by **POST** method to local json server and returns the adde
 
 All your actions will be accompanied by wonderful notifications
 
-To contact me: [[https://t.me/siaxxw]]
+To contact me:[Telegram](https://t.me/siaxxw)
 
 ## Tech
 
