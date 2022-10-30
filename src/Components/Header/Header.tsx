@@ -84,7 +84,7 @@ export const Header:FC = () =>{
              subtitle: adsForm.subtitle, 
              category: adsForm.category,
              salary: adsForm.salary,
-             experience: adsForm.experience});
+             experience: `Опыт работы ${adsForm.experience} (год)`});
         setAdsForm({
             id: 0,
             title: "",
@@ -191,18 +191,54 @@ export const Header:FC = () =>{
 >
   <Box sx={boxStyle}>
     <form className={style.header_add_table}>
-  <TextField name='title' onChange={handleChange} id="outlined-basic" label="Название" variant="outlined" />      
-  <TextField name='category' onChange={handleChange} id="outlined-basic" label="Категория" variant="outlined" />      
-  <TextField name='subtitle' onChange={handleChange} id="outlined-basic" label="Требования" variant="outlined" />      
-  <TextField name='experience' onChange={handleChange} id="outlined-basic" label="Опыт" variant="outlined" />      
-  <TextField name='salary' onChange={handleChange} id="outlined-basic" label="Зарплата" variant="outlined" />      
-  <Button onClick={handleSubmit} type='button' size='large' variant="contained">Submit</Button>
+  <TextField 
+   value={adsForm.title}
+   error={adsForm.title.length === 0 ? true : false}
+   name='title' 
+   onChange={handleChange} 
+   id="outlined-basic" 
+   label="Название" 
+   variant="outlined" />      
+  <TextField
+   value={adsForm.category}
+   name='category'
+   onChange={handleChange}
+   id="outlined-basic"
+   label="Категория"
+   variant="outlined"
+        />      
+  <TextField 
+  value={adsForm.subtitle}
+  error={adsForm.subtitle.length === 0 ? true : false}
+  name='subtitle'
+  onChange={handleChange}
+  id="outlined-basic"
+  label="Требования"
+  variant="outlined" />      
+  <TextField 
+  value={adsForm.experience}
+  name='experience'
+  onChange={handleChange}
+  id="outlined-basic"
+  label="Опыт"
+  variant="outlined"
+  type="number"
+   />      
+  <TextField
+  value={adsForm.salary}
+  name='salary' 
+  onChange={handleChange}
+  id="outlined-basic"
+  label="Зарплата"
+  variant="outlined"
+  type="number" />      
+  <Button 
+  disabled={adsForm.title && adsForm.subtitle && adsForm.category && adsForm.experience && adsForm.salary ? false : true}
+  onClick={handleSubmit} type='button' size='large' variant="contained">Submit</Button>
 </form>
-
     </Box>
 </Modal>
-        </motion.header>
-
+    </motion.header>
     )
 }
 
