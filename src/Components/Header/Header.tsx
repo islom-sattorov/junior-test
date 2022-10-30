@@ -59,6 +59,9 @@ export const Header:FC = () =>{
         experience: "",
         salary: 0,
     })
+    const [inputSearchForm, setInputSearchForm] = useState({
+        search: ""
+    })
     // Post add
     const [openModal, setOpenModal] = useState(false);
     const handleOpenModal = () => setOpenModal(true);
@@ -125,6 +128,17 @@ export const Header:FC = () =>{
         dispatch(addNotification({type: false, message: "logged out "}))
     }
 
+    // input Change
+    const handleInputChange = ( e: React.ChangeEvent<HTMLInputElement>) =>{
+        const {name, value} = e.target;
+        setInputSearchForm(prev => {
+            return{
+                ...prev,
+                [name]: value
+            }
+        })
+    }
+
 
       // POST request 
       const postAds =  (props: PostReq) =>{
@@ -144,6 +158,8 @@ export const Header:FC = () =>{
             console.error(err)
         })
     }
+
+    console.log(inputSearchForm, "Здесь должен быть get запрос из апи по значению инпута, посмотри branch v0.>5 ))))))")
 
 
     // Post Request Login
@@ -182,12 +198,14 @@ useEffect(() =>{
                     }} className={style.header_logo}>Работяга</motion.h1>
                 </div>
                 <div className={style.header_right}>
-                {/* <motion.input
+                <motion.input
                 placeholder='search'
+                value={inputSearchForm.search}
+                onChange={handleInputChange}
                 style={{
                    width: inputWidth
                 }}
-                 type="text" name="search" id="search" /> */}
+                 type="text" name="search" id="search" />
                  {status &&
                  <button onClick={handleOpenModal} className={style.add_btn}>+</button>}
                  {status ? 
