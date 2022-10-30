@@ -60,7 +60,6 @@ function createData(
 
 export default function CustomizedTables() {
     const [posts, setPosts] = useState<Post[]>(() => []);
-    const [error, setError] = useState<unknown>();
     const [fetching, setFetching] = useState(() => true) 
     const [totalCount, setTotalCount] = useState<any>(() => 0)
     const pageRef = useRef(1)
@@ -85,7 +84,7 @@ export default function CustomizedTables() {
             setTotalCount(response.headers[`x-total-count`])
         })
         .catch(err => {
-            setError(err)
+            console.error(err)
         })
         .finally(() => {
             setFetching(false)
