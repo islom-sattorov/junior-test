@@ -80,7 +80,6 @@ export default function CustomizedTables() {
         console.log("render")
         axios.get(`http://localhost:3001/posts?_limit=10&_page=${pageRef.current}`)
         .then(response =>{
-            console.log(fetching)
             setPosts([...posts, ...response.data])
             pageRef.current += 1
             setTotalCount(response.headers[`x-total-count`])
@@ -90,7 +89,6 @@ export default function CustomizedTables() {
             console.error(err)
         })
         .finally(() => {
-            console.log(posts)
             setFetching(false)
         })
     },[fetching])

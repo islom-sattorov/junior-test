@@ -1007,6 +1007,14 @@
       "category": "IT",
       "salary": 3000,
       "experience": "1 год"
+    },
+    {
+      "id": "000000000000",
+      "title": "Frontend Developer",
+      "subtitle": "HTML CSS JS TS React",
+      "category": "IT",
+      "salary": 3000,
+      "experience": "1 год"
     }
      ],
   "login": {
