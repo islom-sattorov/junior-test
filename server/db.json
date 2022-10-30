@@ -1559,6 +1559,30 @@
       "category": "dsa",
       "salary": "123123",
       "experience": "dsa"
+    },
+    {
+      "id": "c85cKOvev9tuzrF9Ytbuh",
+      "title": "islom",
+      "subtitle": "islom",
+      "category": "it",
+      "salary": "1212",
+      "experience": "Опыт работы 2 (год)"
+    },
+    {
+      "id": "nbpO_jv4x2Tm1IUbDGVhT",
+      "title": "dsa",
+      "subtitle": "dsa",
+      "category": "IT",
+      "salary": "12",
+      "experience": "Опыт работы 12 (год)"
+    },
+    {
+      "id": "uMCm6cYi9ixf-NwpRbsvV",
+      "title": "123",
+      "subtitle": "swaedsd",
+      "category": "IT",
+      "salary": "421",
+      "experience": "Опыт работы 12 лет"
     }
   ],
   "login": {

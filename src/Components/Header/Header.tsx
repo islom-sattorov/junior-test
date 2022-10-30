@@ -3,6 +3,7 @@ import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Button from "@mui/material/Button";
 import { deepPurple } from '@mui/material/colors';
+import MenuItem from '@mui/material/MenuItem';
 import Modal from '@mui/material/Modal';
 import Popover from '@mui/material/Popover';
 import { nanoid } from '@reduxjs/toolkit';
@@ -15,6 +16,7 @@ import { exitLogin, selectAllLogin, toggleStatus } from '../../features/login/lo
 import { addNotification } from '../../features/notification/notificationSlice';
 import { LoginButton } from '../LoginButton/LoginButton';
 import style from './Header.module.scss';
+
   interface PostReq {
     title: string,
     subtitle: string,
@@ -23,8 +25,29 @@ import style from './Header.module.scss';
     experience: number | string,
   }
 
+ 
+
 
 export const Header:FC = () =>{
+    const adsCategories = [
+        {
+            value: "IT",
+            label: "IT"
+        },
+        {
+            value: "Restaurant",
+            label: "Restaurant"
+        },
+        {
+            value: "Medicine",
+            label: "Medicine",
+        },
+        {
+            value: "Other",
+            label: "Other"
+        }
+      ]
+
     // Mui Popover
     const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null | undefined>();
     const open = Boolean(anchorEl);
@@ -84,7 +107,7 @@ export const Header:FC = () =>{
              subtitle: adsForm.subtitle, 
              category: adsForm.category,
              salary: adsForm.salary,
-             experience: `Опыт работы ${adsForm.experience} (год)`});
+             experience: `Опыт работы ${adsForm.experience} ${Number(adsForm.experience) <= 4 ? `год`  : "лет"}`});
         setAdsForm({
             id: 0,
             title: "",
@@ -94,7 +117,6 @@ export const Header:FC = () =>{
             salary: 0,
         })
     }
-
 
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => setAnchorEl(event.currentTarget);
 
@@ -112,7 +134,7 @@ export const Header:FC = () =>{
             id: nanoid(),
             title: props.title.toLowerCase(),
             subtitle: props.subtitle.toLowerCase(),
-            category: props.category.toLowerCase(),
+            category: props.category,
             salary: props.salary,
             experience: props.experience,
         })
@@ -199,14 +221,29 @@ export const Header:FC = () =>{
    id="outlined-basic" 
    label="Название" 
    variant="outlined" />      
-  <TextField
+  {/* <TextField
    value={adsForm.category}
    name='category'
    onChange={handleChange}
    id="outlined-basic"
    label="Категория"
    variant="outlined"
-        />      
+        />       */}
+   <TextField
+          id="outlined-select-currency"
+          select
+          label="Select"
+          name='category'
+          value={adsForm.category}
+          onChange={handleChange}
+          helperText="Please select your currency"
+        >
+          {adsCategories.map((option) => (
+            <MenuItem key={option.value} value={option.value}>
+              {option.label}
+            </MenuItem>
+          ))}
+        </TextField>    
   <TextField 
   value={adsForm.subtitle}
   error={adsForm.subtitle.length === 0 ? true : false}
