@@ -10,24 +10,11 @@ import axios from 'axios';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { FC, useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
+import { selectAllBoxStyles } from '../../features/boxStyle/boxStyleSlice';
 import { exitLogin, selectAllLogin, toggleStatus } from '../../features/login/loginSlice';
 import { addNotification } from '../../features/notification/notificationSlice';
 import { LoginButton } from '../LoginButton/LoginButton';
 import style from './Header.module.scss';
-
-
-const boxStyle = {
-    position: 'absolute' as 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-  };
-
   interface PostReq {
     title: string,
     subtitle: string,
@@ -40,6 +27,10 @@ const boxStyle = {
 export const Header:FC = () =>{
     // Mui Popover
     const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null | undefined>();
+    const open = Boolean(anchorEl);
+    const id = open ? 'simple-popover' : undefined;
+    
+    // ADS FORM CONTROLLED
     const [adsForm, setAdsForm] = useState({
         id: 0,
         title: "",
@@ -48,7 +39,32 @@ export const Header:FC = () =>{
         experience: "",
         salary: 0,
     })
+    // Post add
+    const [openModal, setOpenModal] = useState(false);
+    const handleOpenModal = () => setOpenModal(true);
+    const handleCloseModal = () => setOpenModal(false)
 
+
+    // Frame Motion
+    const {scrollY} = useScroll();
+    const offSetY = [0, 400];
+    const heightSizes = [300, 60];
+    const titleSizes = ["4rem", "2.4rem"];
+    const inputWidths = ["300px", "180px"]
+    const height = useTransform(scrollY, offSetY, heightSizes);
+    const titleSize = useTransform(scrollY, offSetY, titleSizes);
+    const inputWidth = useTransform(scrollY, offSetY, inputWidths);
+    
+    // Modal Style
+    const boxStyle = useSelector(selectAllBoxStyles);
+
+    // Redux
+    const dispatch = useDispatch()
+    const {username, password, status} = useSelector(selectAllLogin);
+
+
+
+    // Handle change form
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement>) =>{
         const {name, value} = e.target;
@@ -60,7 +76,7 @@ export const Header:FC = () =>{
         })
     };
 
-
+    // Handle submit Form
     const handleSubmit =  () =>{
         setOpenModal(false)
         patchAds({
@@ -79,12 +95,24 @@ export const Header:FC = () =>{
         })
     }
 
-    const patchAds =  (props: PostReq) =>{
+
+    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => setAnchorEl(event.currentTarget);
+
+    const handleClose = () => setAnchorEl(null);
+
+    const handleExit = () =>{
+        dispatch(exitLogin({username: "", password: "", status: false}))
+        dispatch(addNotification({type: false, message: "logged out "}))
+    }
+
+
+      // Patch request 
+      const patchAds =  (props: PostReq) =>{
         axios.post(`http://localhost:3001/posts/`, {
             id: nanoid(),
-            title: props.title,
-            subtitle: props.subtitle,
-            category: props.category,
+            title: props.title.toLowerCase(),
+            subtitle: props.subtitle.toLowerCase(),
+            category: props.category.toLowerCase(),
             salary: props.salary,
             experience: props.experience,
         })
@@ -95,39 +123,6 @@ export const Header:FC = () =>{
         .catch((err) => {
             console.error(err)
         })
-    }
-    
-    // Frame Motion
-    const {scrollY} = useScroll();
-    const offSetY = [0, 400];
-    
-    const heightSizes = [300, 60];
-    const titleSizes = ["4rem", "2.4rem"];
-    const inputWidths = ["300px", "180px"]
-    
-    const height = useTransform(scrollY, offSetY, heightSizes);
-    const titleSize = useTransform(scrollY, offSetY, titleSizes);
-    const inputWidth = useTransform(scrollY, offSetY, inputWidths);
-    
-    // Redux
-    const dispatch = useDispatch()
-    const {username, password, status} = useSelector(selectAllLogin);
-
-    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) =>{
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
-
-    const open = Boolean(anchorEl);
-    const id = open ? 'simple-popover' : undefined;
-
-
-    const handleExit = () =>{
-        dispatch(exitLogin({username: "", password: "", status: false}))
-        dispatch(addNotification({type: false, message: "logged out "}))
     }
 
 
@@ -148,27 +143,6 @@ export const Header:FC = () =>{
         })
     }
 })
-
-// Post add
-const [openModal, setOpenModal] = useState(false);
-  const handleOpenModal = () => setOpenModal(true);
-  const handleCloseModal = () => setOpenModal(false)
-
-// Local Storage 
-    // useEffect(() =>{
-    //     if(status){
-    //         localStorage.setItem("statusLogin", JSON.stringify(true))
-    //     }else if(!status){
-    //         localStorage.setItem("statusLogin", JSON.stringify(false))
-    //     }
-    // })
-
-    // useEffect(() =>{
-    //     if(JSON.parse(localStorage.getItem("statusLogin") || "")){
-    //         dispatch(toggleStatus(true))
-    //     }
-    // })
-
     return(
         <motion.header 
         style={{height}}
@@ -231,3 +205,20 @@ const [openModal, setOpenModal] = useState(false);
 
     )
 }
+
+
+
+// Local Storage 
+    // useEffect(() =>{
+    //     if(status){
+    //         localStorage.setItem("statusLogin", JSON.stringify(true))
+    //     }else if(!status){
+    //         localStorage.setItem("statusLogin", JSON.stringify(false))
+    //     }
+    // })
+
+    // useEffect(() =>{
+    //     if(JSON.parse(localStorage.getItem("statusLogin") || "")){
+    //         dispatch(toggleStatus(true))
+    //     }
+    // })
