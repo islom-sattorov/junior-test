@@ -1,0 +1,43 @@
+.btn_to_top{
+    /*width: 65px;*/
+    /*height: 65px;*/
+    padding: 22px;
+    background-color: #FF6600;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    animation: topScroll .3s linear;
+}
+
+
+.btn_to_top .arrow {
+    width: 12px;
+    transform: rotate(-90deg);
+}
+
+.btn_to_top.visible{
+    opacity: 1;
+}
+
+.btn_to_top.in.visible{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+@keyframes topScroll {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

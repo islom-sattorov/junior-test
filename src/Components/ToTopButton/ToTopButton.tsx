@@ -1,37 +1,46 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { useMountTransition } from "../hook/useMountTransition";
+import style from "./ScrollBtn.module.css";
 
-export const ToTopButton:FC = () =>{
-    const [visible, setVisible] = useState(false)
+export const ScrollBtn = () => {
+  const [visible, setVisible] = useState(false);
+  const hasTransitionedIn = useMountTransition(visible, 1000);
 
-    const toggleVisible = () =>{
-        const scrolled = document.documentElement.scrollTop;
-        if(scrolled > 300){
-          return  setVisible(true)
-        }
-        return setVisible(false)
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
     }
+  };
 
-    const scrollToTop = () =>{
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        })
-    }
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisible);
+    return () => {
+      window.removeEventListener("scroll", toggleVisible);
+    };
+  }, []);
 
-    useEffect(() => {
-        window.addEventListener('scroll', toggleVisible)
-      return () => {
-        window.removeEventListener('scroll', toggleVisible)
-      }
-    })
-    
-
-    return(
-        <button className="tot_top_btn" style={{display: visible ? "inline" : "none"}} onClick={scrollToTop}>
-            {'>'}
+  return (
+    <>
+      {(hasTransitionedIn || visible) && (
+        <button
+          className={`${style.btn_to_top} ${hasTransitionedIn && style.in} ${
+            visible && style.visible
+          }`}
+          onClick={scrollToTop}
+        >
+          {">"}
         </button>
-    )
-
-
-}
+      )}
+    </>
+  );
+};
