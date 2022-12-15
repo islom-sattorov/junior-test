@@ -29,26 +29,26 @@ interface PostReq {
   experience: number | string;
 }
 
-export const Header: FC = () => {
-  const adsCategories = [
-    {
-      value: "IT",
-      label: "IT",
-    },
-    {
-      value: "Restaurant",
-      label: "Restaurant",
-    },
-    {
-      value: "Medicine",
-      label: "Medicine",
-    },
-    {
-      value: "Other",
-      label: "Other",
-    },
-  ];
+const adsCategories = [
+  {
+    value: "IT",
+    label: "IT",
+  },
+  {
+    value: "Restaurant",
+    label: "Restaurant",
+  },
+  {
+    value: "Medicine",
+    label: "Medicine",
+  },
+  {
+    value: "Other",
+    label: "Other",
+  },
+];
 
+export const Header: FC = () => {
   // Mui Popover
   const [anchorEl, setAnchorEl] = useState<
     HTMLButtonElement | null | undefined
@@ -65,9 +65,11 @@ export const Header: FC = () => {
     experience: "",
     salary: 0,
   });
+
   const [inputSearchForm, setInputSearchForm] = useState({
     search: "",
   });
+
   // Post add
   const [openModal, setOpenModal] = useState(false);
   const handleOpenModal = () => setOpenModal(true);
@@ -123,8 +125,8 @@ export const Header: FC = () => {
     });
   };
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) =>
-    setAnchorEl(event.currentTarget);
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) =>
+    setAnchorEl(e.currentTarget);
 
   const handleClose = () => setAnchorEl(null);
 

@@ -43,7 +43,6 @@ export const LoginButton: FC = () => {
           message: `Hello ${loginForm.username.toLowerCase()}`,
         })
       );
-      // localStorage.setItem("statusLogin", JSON.stringify(true))
     } else {
       dispatch(
         addNotification({
