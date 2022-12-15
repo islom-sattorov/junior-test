@@ -6,18 +6,8 @@ last commit in main branch 30 October 2022
 
 ## How to start
 
-**ALERT: Commands need to run on two different tabs of the terminal**
-
-**Run JSON Server**
-
 ```
-npm run server
-```
-
-**Run application**
-
-```
-npm start
+npm run dev
 ```
 
 The table is drawn by **GET** request from http://localhost:3001/posts/ (If you need to change local server port please check _package.json_ file)
@@ -48,6 +38,7 @@ To contact me: [Telegram](https://t.me/siaxxw)
 - TypeScript
 - React
 - JSON Server
-- AXIOS (GET, POST, PATCH)
+- AXIOS (GET, POST, PATCH) (?)
 - Redux@toolkit
+- Redux@toolkit/Query
 - MUI
