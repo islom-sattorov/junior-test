@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useMountTransition } from "../hook/useMountTransition";
 import style from "./ScrollBtn.module.css";
 
-export const ScrollBtn = () => {
+export const ToTopButton = () => {
   const [visible, setVisible] = useState(false);
   const hasTransitionedIn = useMountTransition(visible, 1000);
 

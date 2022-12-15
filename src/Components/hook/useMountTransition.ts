@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Timeout } from "../types/types";
+import { Timeout } from "../../types/types";
 export const useMountTransition = (
   isMounted: boolean,
   unMountDelay: number
