@@ -5,17 +5,15 @@ import { notificationReducer } from "../features/notification/notificationSlice"
 import { searchReducer } from "../features/search/searchSlice";
 
 export const store = configureStore({
-    reducer:{
-        // data: dataReducer,
-        // posts: postReducer,
-        login: loginReducer,
-        notification: notificationReducer,
-        boxStyle: boxStyleReducer,
-        search: searchReducer,
-    }
-})
+  reducer: {
+    // data: dataReducer,
+    // posts: postReducer,
+    login: loginReducer,
+    notification: notificationReducer,
+    boxStyle: boxStyleReducer,
+    search: searchReducer,
+  },
+});
 
-
-// export type RootState = ReturnType<typeof store.getState>
-// export type AppDispatch = typeof store.dispatch;
-
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
