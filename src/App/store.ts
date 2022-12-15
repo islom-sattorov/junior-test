@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { boxStyleReducer } from "../features/boxStyle/boxStyleSlice";
-import { loginReducer } from "../features/login/loginSlice";
-import { notificationReducer } from "../features/notification/notificationSlice";
-import { searchReducer } from "../features/search/searchSlice";
+import { apiSlice } from "../app/api/apiSlice";
+import { boxStyleReducer } from "./reducers/boxStyle/boxStyleSlice";
+import { loginReducer } from "./reducers/login/loginSlice";
+import { notificationReducer } from "./reducers/notification/notificationSlice";
+import { searchReducer } from "./reducers/search/searchSlice";
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     notification: notificationReducer,
     boxStyle: boxStyleReducer,
     search: searchReducer,
+    [apiSlice.reducerPath]: apiSlice.reducer,
   },
 });
 

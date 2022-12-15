@@ -1,5 +1,3 @@
-# IMPORTANT TO READ
-
 # Junior Test
 
 ## How to start
