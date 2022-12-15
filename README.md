@@ -1,8 +1,6 @@
 # IMPORTANT TO READ
 
-last commit in main branch 30 October 2022
-
-# Alif Junior Test
+# Junior Test
 
 ## How to start
 
