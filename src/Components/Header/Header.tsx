@@ -2,12 +2,10 @@ import { TextField } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import { deepPurple } from "@mui/material/colors";
 import MenuItem from "@mui/material/MenuItem";
 import Modal from "@mui/material/Modal";
 import Popover from "@mui/material/Popover";
-import { nanoid } from "@reduxjs/toolkit";
-import axios from "axios";
+import { deepPurple } from "@mui/material/colors";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FC, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -106,15 +104,15 @@ export const Header: FC = () => {
   // Handle submit Form
   const handleSubmit = () => {
     setOpenModal(false);
-    postAds({
-      title: adsForm.title,
-      subtitle: adsForm.subtitle,
-      category: adsForm.category,
-      salary: adsForm.salary,
-      experience: `Опыт работы ${adsForm.experience} ${
-        Number(adsForm.experience) <= 4 ? `год` : "лет"
-      }`,
-    });
+    // postAds({
+    //   title: adsForm.title,
+    //   subtitle: adsForm.subtitle,
+    //   category: adsForm.category,
+    //   salary: adsForm.salary,
+    //   experience: `Опыт работы ${adsForm.experience} ${
+    //     Number(adsForm.experience) <= 4 ? `год` : "лет"
+    //   }`,
+    // });
     setAdsForm({
       id: 0,
       title: "",
@@ -148,26 +146,26 @@ export const Header: FC = () => {
   };
 
   // POST request
-  const postAds = (props: PostReq) => {
-    axios
-      .post(`http://localhost:3001/posts/`, {
-        id: nanoid(),
-        title: props.title.toLowerCase(),
-        subtitle: props.subtitle.toLowerCase(),
-        category: props.category,
-        salary: props.salary,
-        experience: props.experience,
-      })
-      .then((response) => {
-        dispatch(
-          addNotification({ type: true, message: "Successfully Advertised" })
-        );
-        console.log(response);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  };
+  // const postAds = (props: PostReq) => {
+  //   axios
+  //     .post(`http://localhost:3001/posts/`, {
+  //       id: nanoid(),
+  //       title: props.title.toLowerCase(),
+  //       subtitle: props.subtitle.toLowerCase(),
+  //       category: props.category,
+  //       salary: props.salary,
+  //       experience: props.experience,
+  //     })
+  //     .then((response) => {
+  //       dispatch(
+  //         addNotification({ type: true, message: "Successfully Advertised" })
+  //       );
+  //       console.log(response);
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //     });
+  // };
 
   console.log(
     inputSearchForm,
@@ -175,32 +173,32 @@ export const Header: FC = () => {
   );
 
   // Post Request Login
-  useEffect(() => {
-    if (username !== "" && username !== undefined) {
-      axios
-        .patch(`http://localhost:3001/login`, {
-          username: username.toLowerCase(),
-          password: password.toLowerCase(),
-        })
-        .then((response) => {
-          if (
-            response.status < 300 &&
-            response.data.username.toLowerCase() === "admin" &&
-            response.data.password.toLowerCase() === "admin" &&
-            !status
-          ) {
-            localStorage.setItem("status", JSON.stringify(true));
-            dispatch(toggleStatus(true));
-          }
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    }
-  });
+  // useEffect(() => {
+  //   if (username !== "" && username !== undefined) {
+  //     axios
+  //       .patch(`http://localhost:3001/login`, {
+  //         username: username.toLowerCase(),
+  //         password: password.toLowerCase(),
+  //       })
+  //       .then((response) => {
+  //         if (
+  //           response.status < 300 &&
+  //           response.data.username.toLowerCase() === "admin" &&
+  //           response.data.password.toLowerCase() === "admin" &&
+  //           !status
+  //         ) {
+  //           localStorage.setItem("status", JSON.stringify(true));
+  //           dispatch(toggleStatus(true));
+  //         }
+  //       })
+  //       .catch((err) => {
+  //         console.error(err);
+  //       });
+  //   }
+  // });
 
   useEffect(() => {
-    if (JSON.parse(localStorage.getItem("status") || "")) {
+    if (JSON.parse(localStorage.getItem("status")!)) {
       dispatch(toggleStatus(true));
     }
   }, []);
